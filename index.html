@@ -1,39 +1,118 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Landing</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <style>
+    html, body {
+      height: 100%;
+    }
 
-    <!--custom-->
-    <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="nav.css">
-    <script src="script.js"></script>
+    .full-w{
+      width:100%;
+    }
+    .full-h {
+      height: 100%;
+    }
+
+    .vert-center {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .section {
+      padding: 60px 0;
+    }
+
+    #fs1 {
+      background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      ), url('http://soler-palau.lv/wp-content/uploads/2016/02/M79FUJAM231.jpg') no-repeat center;
+      background-size: cover;
+      background-color: pink;
+      display: table;
+    }
+    #section1 {
+      background-color: lightyellow
+    }
+    #fs2 {
+      background-color: lightblue;
+      display: table;
+    } 
+
+    body {
+      color: white;
+    }
+
+    h1 {
+      font-size: 100px; 
+    }
+    
+    /* small */
+    @media only screen and (min-width: 768px) {
+        h1 {
+            font-size: 150px;
+        }
+    }
+    /* medium */
+    @media only screen and (min-width: 992px) {
+        h1 {
+            font-size: 200px;
+        }
+    }
+    /* large */
+    @media only screen and (min-width: 1200px) {
+        h1 {
+            font-size: 250px;
+        }
+    }
+
+
+  </style>
 </head>
-<div class= "container">
-    <div class= "row">
-        <div class= "col-sm-4"></div>
-        <div class= "col-sm-4"></div>
-        <div class= "col-sm-4"></div>
-        <div class= "col-md-4"></div>
-        <div class= "col-md-4"></div>
-        <div class= "col-md-4"></div>
-        <div class= "col-lg-4"></div>
-        <div class= "col-lg-4"></div>
-        <div class= "col-lg-4"></div>
-    </div>
-</div>
 <body>
-
+  <div class="full-w full-h" id="fs1">
+    <div class="vert-center text-center">
+      <h1>fs1</h1>
+    </div>
+  </div>
+  
+  <div id="section1" class="section text-center">
+    <h1>section1</h1>
+  </div>
+  
+  <div class="full-w full-h" id="fs2">
+    <div class="vert-center text-center">
+      <h1>fs2</h1>
+    </div>
+  </div>
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
