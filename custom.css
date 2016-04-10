@@ -1,6 +1,8 @@
    html,
+   
    body {
        height: 100%;
+       
    }
    
    .full-w {
@@ -22,7 +24,7 @@
        display: table;
    }
    
-   #footer {}
+
    
    #front {
        color: white;
@@ -30,26 +32,36 @@
    
    h1 {
        font-size: 100px;
-       color: #cc3300;
+       color: white;
    }
    /* small */
    
    @media only screen and (min-width: 768px) {
        h1 {
-           font-size: 150px;
+           font-size: 100px;
        }
    }
    /* medium */
    
    @media only screen and (min-width: 992px) {
        h1 {
-           font-size: 200px;
+           font-size: 150px;
        }
    }
    /* large */
    
    @media only screen and (min-width: 1200px) {
        h1 {
-           font-size: 250px;
+           font-size: 200px;
        }
    }
+   
+   .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  
+  /* {*/
+  /*  background:linear-gradient(to bottom right, #457fca, #5691c8); */
+  /*}*/
